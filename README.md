@@ -16,8 +16,10 @@ This repository contains an asynchronous Python script for brute forcing SMB (Se
    You need Python 3.8+ and the `impacket` library. Install dependencies with:
 
    ```bash
-   pip install impacket
+   pip install -r requirements.txt
    ```
+
+   This script uses Python's built-in `asyncio` library (no extra async dependencies needed).
 
 2. **Prepare Username and Password Files**
 
@@ -27,12 +29,12 @@ This repository contains an asynchronous Python script for brute forcing SMB (Se
 
 3. **Configure the Target**
 
-   Edit the `TARGET` variable at the top of `smb_bruteforce.py` to point to the SMB server's IP address.
+   Edit the `TARGET` variable at the top of `smb_bruteforce_Version4.py` to point to the SMB server's IP address.
 
 4. **Run the Script**
 
    ```bash
-   python smb_bruteforce.py
+   python smb_bruteforce_Version4.py
    ```
 
 ## Legal Notice
